@@ -1,0 +1,84 @@
+# ember-night-tc  —  dark / OPAQUE
+#
+# The fully-painted counterpart to ember-dusk-tc: a warm charcoal canvas
+# (#191512) so the theme looks identical regardless of terminal background
+# or wallpaper. Same ember accent language, tuned slightly brighter since
+# the backdrop is known and fixed.
+#
+#   set colorscheme ember-night-tc
+
+# --- base ---------------------------------------------------------------
+color-link default            "#EDE6DA,#191512"
+color-link ignore             "#8A7F70"
+color-link type.extended      "default"
+
+# --- comments -----------------------------------------------------------
+color-link comment            "italic #8A7F70"
+color-link comment.bright     "italic #A69985"
+
+# --- literals -----------------------------------------------------------
+color-link constant           "#F2AB6B"
+color-link constant.number    "#FFC46B"
+color-link constant.bool      "bold #FFC46B"
+color-link constant.bool.true  "bold #93CE7E"
+color-link constant.bool.false "bold #FF8271"
+color-link constant.string    "#CEDC8D"
+color-link constant.string.url "underline #CEDC8D"
+color-link constant.specialChar "#FFA37E"
+
+# --- names --------------------------------------------------------------
+color-link identifier         "#F7CA81"
+color-link identifier.class   "bold #FFC15F"
+color-link identifier.macro   "#EC9760"
+color-link identifier.var     "#EDE6DA"
+
+# --- keywords & structure -----------------------------------------------
+color-link statement          "bold #FF8D6E"
+color-link special            "#FF8D6E"
+color-link preproc            "#EC9760"
+color-link preproc.shebang    "italic #8A7F70"
+
+color-link symbol             "#E3B38D"
+color-link symbol.brackets    "#C2B8A8"
+color-link symbol.operator    "#FFA37E"
+color-link symbol.tag         "bold #FF8D6E"
+
+color-link type               "italic #82CAB8"
+color-link type.keyword       "bold #FF8D6E"
+
+color-link underlined         "underline #82CAB8"
+color-link error              "bold #FF6259"
+color-link todo               "bold #191512,#FFC46B"
+
+# --- editor chrome ------------------------------------------------------
+color-link statusline             "#F6EFE3,#2B241E"
+color-link statusline.inactive    "#8F8476,#211C17"
+color-link statusline.suggestions "#EDE6DA,#332B23"
+color-link tabbar                 "#9C8F7E,#211C17"
+color-link tabbar.active          "bold #FFC46B,#2B241E"
+
+color-link message            "#82CAB8"
+color-link error-message      "bold #F6EFE3,#A83A2E"
+
+color-link cursor-line        "#241E19"
+color-link color-column       "#221D19"
+color-link selection          "#F6EFE3,#4A3A2E"
+color-link hlsearch           "#191512,#FFC46B"
+color-link match-brace        "bold #191512,#FF8D6E"
+
+# --- gutter -------------------------------------------------------------
+color-link line-number        "#796E60,#191512"
+color-link current-line-number "bold #FFC46B,#241E19"
+color-link gutter-info        "#82CAB8"
+color-link gutter-warning     "#FFC46B"
+color-link gutter-error       "#FF6259"
+color-link indent-char        "#4D443B"
+color-link divider            "#55463D"
+color-link scrollbar          "#796E60"
+
+# --- diff & whitespace warnings -----------------------------------------
+color-link diff-added         "#93CE7E"
+color-link diff-modified      "#FFC46B"
+color-link diff-deleted       "#FF6259"
+color-link tab-error          "#6E2E28"
+color-link trailingws         "#6E2E28"

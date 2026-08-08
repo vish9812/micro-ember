@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "ember",
+        "Description": "Four warm ember colorschemes for micro: two transparent darks (warm and cool neutrals), one opaque dark, one light.",
+        "Website": "https://github.com/vish9812/micro-ember",
+        "Tags": ["colorscheme", "theme", "truecolor"],
+        "Versions": [
+            {
+                "Version": "1.0.0",
+                "Url": "https://github.com/vish9812/micro-ember/archive/v1.0.0.zip",
+                "Require": {
+                    "micro": ">=2.0.0"
+                }
+            }
+        ]
+    }
+]

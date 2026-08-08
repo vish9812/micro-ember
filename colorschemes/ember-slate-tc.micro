@@ -1,0 +1,83 @@
+# ember-slate-tc  —  dark / TRANSPARENT / cool neutrals
+#
+# Same warm ember accents as ember-dusk-tc, but the greys, text and chrome
+# are slate/blue-leaning instead of brown. Use this one over cool or
+# photographic wallpapers where warm greys would look muddy.
+#
+#   set colorscheme ember-slate-tc
+
+# --- base ---------------------------------------------------------------
+color-link default            "#E4E7EC"
+color-link ignore             "#868D98"
+color-link type.extended      "default"
+
+# --- comments -----------------------------------------------------------
+color-link comment            "italic #868D98"
+color-link comment.bright     "italic #98A0AC"
+
+# --- literals -----------------------------------------------------------
+color-link constant           "#EDA469"
+color-link constant.number    "#FFB86B"
+color-link constant.bool      "bold #FFB86B"
+color-link constant.bool.true  "bold #86C97C"
+color-link constant.bool.false "bold #FF7F6E"
+color-link constant.string    "#BCD98F"
+color-link constant.string.url "underline #BCD98F"
+color-link constant.specialChar "#FF9B85"
+
+# --- names --------------------------------------------------------------
+color-link identifier         "#F2C879"
+color-link identifier.class   "bold #FFBE5C"
+color-link identifier.macro   "#E88A5A"
+color-link identifier.var     "#E4E7EC"
+
+# --- keywords & structure -----------------------------------------------
+color-link statement          "bold #FF8264"
+color-link special            "#FF8264"
+color-link preproc            "#E88A5A"
+color-link preproc.shebang    "italic #868D98"
+
+color-link symbol             "#D9AC8C"
+color-link symbol.brackets    "#B6BDC7"
+color-link symbol.operator    "#FF9B85"
+color-link symbol.tag         "bold #FF8264"
+
+color-link type               "italic #6FC5C9"
+color-link type.keyword       "bold #FF8264"
+
+color-link underlined         "underline #6FC5C9"
+color-link error              "bold #FF6B5E"
+color-link todo               "bold #171C22,#FFBE5C"
+
+# --- editor chrome (solid) ----------------------------------------------
+color-link statusline             "#EDF0F4,#232A33"
+color-link statusline.inactive    "#868D98,#1A2027"
+color-link statusline.suggestions "#E4E7EC,#2C3541"
+color-link tabbar                 "#868D98,#1A2027"
+color-link tabbar.active          "bold #FFC46B,#232A33"
+
+color-link message            "#6FC5C9"
+color-link error-message      "bold #EDF0F4,#A83A2E"
+
+color-link cursor-line        "#242A33"
+color-link color-column       "#242A33"
+color-link selection          "#EDF0F4,#3A4553"
+color-link hlsearch           "#1A2027,#FFBE5C"
+color-link match-brace        "bold #1A2027,#FF8264"
+
+# --- gutter -------------------------------------------------------------
+color-link line-number        "#737D8B"
+color-link current-line-number "bold #FFC46B"
+color-link gutter-info        "#6FC5C9"
+color-link gutter-warning     "#FFBE5C"
+color-link gutter-error       "#FF6B5E"
+color-link indent-char        "#49525E"
+color-link divider            "#485667"
+color-link scrollbar          "#737D8B"
+
+# --- diff & whitespace warnings -----------------------------------------
+color-link diff-added         "#86C97C"
+color-link diff-modified      "#FFBE5C"
+color-link diff-deleted       "#FF6B5E"
+color-link tab-error          "#5E2B2B"
+color-link trailingws         "#5E2B2B"

@@ -1,0 +1,84 @@
+# ember-paper-tc  —  light / OPAQUE
+#
+# Warm paper canvas (#FBF6EA) with the ember accents darkened so every
+# highlight group clears ~4.5:1 contrast against the background. Same
+# roles as the dark themes — coral keywords, amber functions, olive
+# strings, teal types — just rotated down in lightness instead of up.
+#
+#   set colorscheme ember-paper-tc
+
+# --- base ---------------------------------------------------------------
+color-link default            "#35302A,#FBF6EA"
+color-link ignore             "#776E60"
+color-link type.extended      "default"
+
+# --- comments -----------------------------------------------------------
+color-link comment            "italic #776E60"
+color-link comment.bright     "italic #635B4E"
+
+# --- literals -----------------------------------------------------------
+color-link constant           "#A2560B"
+color-link constant.number    "#8A5A00"
+color-link constant.bool      "bold #8A5A00"
+color-link constant.bool.true  "bold #3F7D2F"
+color-link constant.bool.false "bold #B03A22"
+color-link constant.string    "#55731F"
+color-link constant.string.url "underline #55731F"
+color-link constant.specialChar "#B4552F"
+
+# --- names --------------------------------------------------------------
+color-link identifier         "#A2560B"
+color-link identifier.class   "bold #8C4A05"
+color-link identifier.macro   "#A8481A"
+color-link identifier.var     "#35302A"
+
+# --- keywords & structure -----------------------------------------------
+color-link statement          "bold #BF3D24"
+color-link special            "#BF3D24"
+color-link preproc            "#A8481A"
+color-link preproc.shebang    "italic #776E60"
+
+color-link symbol             "#8A5A34"
+color-link symbol.brackets    "#6E6558"
+color-link symbol.operator    "#BF3D24"
+color-link symbol.tag         "bold #BF3D24"
+
+color-link type               "italic #1F6F68"
+color-link type.keyword       "bold #BF3D24"
+
+color-link underlined         "underline #1F6F68"
+color-link error              "bold #B00020"
+color-link todo               "bold #FBF6EA,#BF3D24"
+
+# --- editor chrome ------------------------------------------------------
+color-link statusline             "#FBF6EA,#463F35"
+color-link statusline.inactive    "#D6CEC0,#5A5349"
+color-link statusline.suggestions "#35302A,#EFE7D6"
+color-link tabbar                 "#6E6558,#EFE6D4"
+color-link tabbar.active          "bold #A2560B,#FBF6EA"
+
+color-link message            "#1F6F68"
+color-link error-message      "bold #FBF6EA,#A32218"
+
+color-link cursor-line        "#F3EBD9"
+color-link color-column       "#F3EBD9"
+color-link selection          "#35302A,#E6D9BE"
+color-link hlsearch           "#35302A,#F5D57A"
+color-link match-brace        "bold #FBF6EA,#BF3D24"
+
+# --- gutter -------------------------------------------------------------
+color-link line-number        "#8E7F65,#FBF6EA"
+color-link current-line-number "bold #A2560B,#F3EBD9"
+color-link gutter-info        "#1F6F68"
+color-link gutter-warning     "#8A5A00"
+color-link gutter-error       "#B00020"
+color-link indent-char        "#CFC4AC"
+color-link divider            "#C9BEA6"
+color-link scrollbar          "#8E7F65"
+
+# --- diff & whitespace warnings -----------------------------------------
+color-link diff-added         "#3F7D2F"
+color-link diff-modified      "#8A5A00"
+color-link diff-deleted       "#B00020"
+color-link tab-error          "#F0C6BC"
+color-link trailingws         "#F0C6BC"

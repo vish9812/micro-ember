@@ -1,0 +1,87 @@
+# ember-dusk-tc  —  dark / TRANSPARENT / warm neutrals
+#
+# Editor area is transparent (no background is set on `default`, so your
+# terminal's background + wallpaper shows through). Chrome — statusline,
+# tabbar, cursor line, selection — is solid so you never lose your place.
+# Warm ember accents: coral keywords, amber functions, olive strings,
+# one cool teal anchor for types.
+#
+#   set colorscheme ember-dusk-tc
+
+# --- base ---------------------------------------------------------------
+# fg only => background stays terminal-default => transparent
+color-link default            "#EAE3D6"
+color-link ignore             "#958B7E"
+color-link type.extended      "default"
+
+# --- comments -----------------------------------------------------------
+color-link comment            "italic #958B7E"
+color-link comment.bright     "italic #A99C8B"
+
+# --- literals -----------------------------------------------------------
+color-link constant           "#F0A868"
+color-link constant.number    "#FFC46B"
+color-link constant.bool      "bold #FFC46B"
+color-link constant.bool.true  "bold #8FC97A"
+color-link constant.bool.false "bold #FF7F6E"
+color-link constant.string    "#CBD98A"
+color-link constant.string.url "underline #CBD98A"
+color-link constant.specialChar "#FF9E7A"
+
+# --- names --------------------------------------------------------------
+color-link identifier         "#F5C77E"
+color-link identifier.class   "bold #FFBE5C"
+color-link identifier.macro   "#E9945C"
+color-link identifier.var     "#EAE3D6"
+
+# --- keywords & structure -----------------------------------------------
+color-link statement          "bold #FF8A6B"
+color-link special            "#FF8A6B"
+color-link preproc            "#E9945C"
+color-link preproc.shebang    "italic #958B7E"
+
+color-link symbol             "#E0B08A"
+color-link symbol.brackets    "#C6BCAC"
+color-link symbol.operator    "#FF9E7A"
+color-link symbol.tag         "bold #FF8A6B"
+
+color-link type               "italic #7FC7B5"
+color-link type.keyword       "bold #FF8A6B"
+
+color-link underlined         "underline #7FC7B5"
+color-link error              "bold #FF5F56"
+color-link todo               "bold #1F1916,#FFC46B"
+
+# --- editor chrome (solid, so it reads over any wallpaper) --------------
+color-link statusline             "#F4EDE1,#332822"
+color-link statusline.inactive    "#93887A,#241C18"
+color-link statusline.suggestions "#EAE3D6,#3D2F28"
+color-link tabbar                 "#93887A,#241C18"
+color-link tabbar.active          "bold #FFC46B,#332822"
+
+color-link message            "#7FC7B5"
+color-link error-message      "bold #F4EDE1,#A83A2E"
+
+# cursor-line / color-column use the FOREGROUND value as the fill color
+color-link cursor-line        "#2E2521"
+color-link color-column       "#2E2521"
+color-link selection          "#F2EBDF,#54423A"
+color-link hlsearch           "#241C18,#FFC46B"
+color-link match-brace        "bold #241C18,#FF8A6B"
+
+# --- gutter (left transparent so it blends with the wallpaper) ----------
+color-link line-number        "#877A6B"
+color-link current-line-number "bold #FFC46B"
+color-link gutter-info        "#7FC7B5"
+color-link gutter-warning     "#FFC46B"
+color-link gutter-error       "#FF5F56"
+color-link indent-char        "#595044"
+color-link divider            "#655046"
+color-link scrollbar          "#877A6B"
+
+# --- diff & whitespace warnings (fg value = fill color) -----------------
+color-link diff-added         "#8FC97A"
+color-link diff-modified      "#FFC46B"
+color-link diff-deleted       "#FF5F56"
+color-link tab-error          "#6E2E28"
+color-link trailingws         "#6E2E28"
