@@ -31,11 +31,14 @@ selection — solid so the cursor never gets lost.
 </table>
 
 The top two set no background of their own, so what you see behind the text is
-the terminal — a plain colour here, standing in for whatever your wallpaper is.
-The bottom two bring their own and look the same everywhere.
+a real wallpaper showing through a real terminal — that is the whole point of
+them, and the chrome staying solid on top of it is what keeps the cursor
+findable. The bottom two bring their own background and look the same
+everywhere, whatever is behind the window.
 
-These are rendered from the `.tape` files in `demo/`, so they can be rebuilt
-after a palette change with `vhs demo/ember-dusk-tc.tape`. They live on the
+All four are captured by `demo/capture.sh`, which drives WezTerm on a virtual
+display, so they can be rebuilt after a palette change and none of them is an
+artist's impression. They live on the
 [`assets`](https://github.com/vish9812/micro-ember/tree/assets) branch to keep
 them out of the archive the plugin manager installs.
 
