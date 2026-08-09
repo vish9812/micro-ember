@@ -64,6 +64,17 @@ All four are `-tc` schemes and need 24-bit colour:
 Restart micro afterwards. On a 256-colour terminal the palette degrades to
 approximations and will not look as intended.
 
+## My other plugins
+
+- [palette](https://github.com/vish9812/micro-palette) — a searchable palette for
+  micro: help topics, options, colorschemes, open buffers and files behind one
+  keystroke. Its colorscheme mode previews these four live.
+- [scrollz](https://github.com/vish9812/micro-scrollz) — viewport control for
+  micro: put the line you are reading where you want it on screen, and move half
+  a screen without losing the cursor.
+- [navz](https://github.com/vish9812/navz) — keyboard-first navigation for VS
+  Code: jump to any visible word in two keystrokes.
+
 ## License
 
 MIT
