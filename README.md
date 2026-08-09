@@ -17,6 +17,28 @@ The two transparent themes leave `default` without a background so your
 terminal shows through, but keep the chrome — statusline, tabbar, cursor line,
 selection — solid so the cursor never gets lost.
 
+## What they look like
+
+<table>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/vish9812/micro-ember/assets/ember-dusk-tc.png" alt="ember-dusk-tc: warm neutrals over a warm brown terminal background"><br><sub><b>ember-dusk-tc</b> — dark, transparent, warm</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/vish9812/micro-ember/assets/ember-slate-tc.png" alt="ember-slate-tc: cool neutrals over a deep blue terminal background"><br><sub><b>ember-slate-tc</b> — dark, transparent, cool</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="https://raw.githubusercontent.com/vish9812/micro-ember/assets/ember-night-tc.png" alt="ember-night-tc: warm neutrals on the scheme's own opaque dark background"><br><sub><b>ember-night-tc</b> — dark, opaque</sub></td>
+<td width="50%"><img src="https://raw.githubusercontent.com/vish9812/micro-ember/assets/ember-paper-tc.png" alt="ember-paper-tc: dark text on a warm off-white background"><br><sub><b>ember-paper-tc</b> — light, opaque</sub></td>
+</tr>
+</table>
+
+The top two set no background of their own, so what you see behind the text is
+the terminal — a plain colour here, standing in for whatever your wallpaper is.
+The bottom two bring their own and look the same everywhere.
+
+These are rendered from the `.tape` files in `demo/`, so they can be rebuilt
+after a palette change with `vhs demo/ember-dusk-tc.tape`. They live on the
+[`assets`](https://github.com/vish9812/micro-ember/tree/assets) branch to keep
+them out of the archive the plugin manager installs.
+
 ## Install
 
 ### Via micro's plugin manager
