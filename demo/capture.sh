@@ -74,12 +74,22 @@ shoot() {
 
 	# -draw_mouse 0: x11grab composites the X pointer in by default, which lands
 	# an ✕ in the middle of the editor.
+	#
+	# -pred mixed: per-row PNG filtering. Lossless, and worth roughly a third of
+	# the file on the wallpaper-backed shots, which are the big ones.
 	ffmpeg -loglevel error -y -f x11grab -draw_mouse 0 -video_size "$size" \
-		-i "$display+0,0" -frames:v 1 "$out/$scheme.png"
+		-i "$display+0,0" -frames:v 1 -pred mixed "$out/$scheme.png"
 
 	kill $wez_pid 2>/dev/null || true
 	wait $wez_pid 2>/dev/null || true
-	echo "  -> demo/out/$scheme.png ($size)"
+
+	# Lossless, and worth another fifth of the file. Optional: the capture is
+	# correct without it, just larger.
+	if command -v oxipng >/dev/null; then
+		oxipng -o max --strip safe -q "$out/$scheme.png"
+	fi
+
+	echo "  -> demo/out/$scheme.png ($size, $(du -h "$out/$scheme.png" | cut -f1))"
 }
 
 if [ $# -gt 0 ]; then

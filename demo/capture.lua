@@ -14,7 +14,11 @@ local config = wezterm.config_builder()
 config.front_end = "Software"
 
 config.font = wezterm.font("VictorMono Nerd Font")
-config.font_size = 18.0
+
+-- ~/.wezterm.lua runs at 18, which gives a 1352x1190 capture — more pixels than
+-- a README thumbnail can use, and a nearly square shot reads small in a grid.
+-- 14 keeps every one of the sample's 35 rows at about half the pixel count.
+config.font_size = 14.0
 config.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
 
 -- Nothing here but the editor: no tab bar, no decorations, and a size that
