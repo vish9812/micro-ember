@@ -1,0 +1,5 @@
+# Rendered screenshots. The repository is the distribution — `plugin install`
+# unpacks the release archive straight into ~/.config/micro/plug/ember — so the
+# pictures live on the `assets` branch instead of adding ~850K to every install.
+# The .tape files beside this are the source; `vhs demo/<scheme>.tape` rebuilds.
+demo/out/
