@@ -14,7 +14,7 @@
 set -eu
 
 repo=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
-out="$repo/demo/out"
+out="$repo/screenshots"
 mkdir -p "$out"
 
 for bin in Xvfb wezterm ffmpeg xwininfo; do
@@ -89,7 +89,7 @@ shoot() {
 		oxipng -o max --strip safe -q "$out/$scheme.png"
 	fi
 
-	echo "  -> demo/out/$scheme.png ($size, $(du -h "$out/$scheme.png" | cut -f1))"
+	echo "  -> screenshots/$scheme.png ($size, $(du -h "$out/$scheme.png" | cut -f1))"
 }
 
 if [ $# -gt 0 ]; then
